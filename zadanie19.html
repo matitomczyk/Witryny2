@@ -1,0 +1,47 @@
+<html>
+ <script language="JavaScript">
+function pole(a,b)
+{
+ a_liczba=parseFloat(a);
+ b_liczba=parseFloat(b);
+ pole_wynik=Math.PI*a_liczba*b_liczba;
+ document.getElementsByName('obj')[0].value=pole_wynik.toFixed(2); /* na dokument */
+ alert("P="+pole_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
+ pokaz1.innerHTML="P="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obwod(a,b)
+{
+ a_liczba=parseFloat(a);
+ b_liczba=parseFloat(b);
+ obwod_wynik=2*a_liczba+2*b_liczba;
+ document.getElementsByName('obwod')[0].value=obwod_wynik.toFixed(2);
+ alert("Pc="+obwod_wynik.toFixed(2)+" cm^2");
+ pokaz2.innerHTML="Pc="+obwod_wynik.toFixed(2)+"cm";
+}
+ </script>
+</head>
+<body>
+Pobliczanie pola i obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="Pole(this.a.value,this.b.value);
+obwod(this.a.value,this.b.value);return false">
+Podaj a=
+<input size="6" name="a">
+Podaj b=
+<input size="6" name="b">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+P=
+<input size="6" name="obj">
+Obw=
+<input size="6" name="pole">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

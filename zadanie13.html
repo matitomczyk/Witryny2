@@ -1,0 +1,22 @@
+<html>
+<body>
+<div style="color:dark_blue;font-size:55px;">   
+<script language="JavaScript">
+
+var x = prompt("A = ","");
+var y = prompt("B = ","");
+
+var a=parseFloat(x);
+var b=parseFloat(y);
+
+var atom = Math.pow(a, 3);
+var btom = 3*(Math.pow(a, b))*b;
+var ctom = 3*(a*(Math.pow(b, b)));
+var dtom = Math.pow(b,3);
+var suma=atom+btom+ctom+dtom;
+document.write("Wczytane liczby: \nA="+a+"\nB="+b+"<br>"); 
+document.write("("+a+"+"+b+")"+"^3 = "+a+"^3"+"3*(("+a+")^"+b+") + 3*("+a+")*(("+b+")^"+b+") + "+b+"^3 = "+atom+"+"+btom+"+"+ctom+"+"+dtom+" = "+suma);
+</script>
+</div>
+</body>
+</html>
