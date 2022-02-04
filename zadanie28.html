@@ -1,0 +1,28 @@
+<html>
+ <head>
+ <script type="text/javascript">
+35
+ function komputer(marka_tomczyk,kolor_tomczyk,cena_tomczyk)
+{
+this.marka=marka_tomczyk;
+this.kolor=kolor_tomczyk;
+this.cena=cena_tomczyk;
+}
+ komputer.prototype.wypisz = function ()
+ {
+ alert(this.marka + ' ' + this.kolor+ ' ' + this.cena);
+ };
+var sprzet1 = new komputer("msi", "srebrny", "5000"); 
+var sprzet2 = new komputer('hp', 'czarny', '3500');
+sprzet1.wypisz(); 
+sprzet2.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+
+ document.write("sprzęt pierwszy"+" "+sprzet1.marka+" "+sprzet1.kolor+" "+sprzet1.cena);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe 
+</body>
+</html>
