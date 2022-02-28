@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset=UTF-8">
+<div style="color:#0066FF;font-size:52px;">
+<script language="JavaScript">
+var N0_tom=prompt("Podaj ilosc=","");
+var t_tom=prompt("Podaj po ilu latach sprawdzać","");
+var No=parseFloat(N0_tom);
+var t=parseFloat(t_tom);
+var T_tom=prompt("Podaj czas połowicznego rozpadu pierwiastka:","");
+var T=parseFloat(T_tom);
+var lambda=Math.LN2/T;
+var N=Math.pow((1/2),t/T)*No;
+</script>
+<script language="JavaScript">
+document.write("N0="+No+"[sztuk]");
+</script>N0=2[sztuk]<br>
+<script language="JavaScript">
+document.write("t="+t+"[lat]");
+</script>t=2[lat]<br>
+<script language="JavaScript">
+document.write("T1/2="+T+"[lat]");
+</script>T1/2=2[lat]<br>
+<script language="JavaScript">
+document.write("Lambda="+lambda.toFixed(7)+"[1/rok]");
+</script>Lambda=0.3465736[1/rok]<br>
+<script language="JavaScript">
+document.write("N="+N.toFixed(7)+"[sztuk]");
+</script>N=1.0000000[sztuk]<br>
+</div>
+
+</body></html>
